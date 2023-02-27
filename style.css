@@ -55,6 +55,7 @@ body {
     font-weight: 300;
 }
 
+
 .budget__value {
     font-weight: 300;
     font-size: 46px;
@@ -107,7 +108,39 @@ body {
     border-radius: 3px;
 }
 
-
+/* RESPONSIVE */
+@media only screen and (max-width: 700px) { 
+    .budget {
+        width: 90%;
+    }
+    .container {
+        width: 90%;
+    }
+    .budget__title {
+        font-size: 13px;
+    }
+    .budget__value {
+        font-size: 26px;
+    }
+    .budget__income--text,
+    .budget__expenses--text {
+        font-size: 13px;
+    }
+    .budget__income--value,
+    .budget__expenses--value {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .budget__income--text,
+    .budget__expenses--text {
+        font-size: 10px;
+    }
+    .budget__income--value,
+    .budget__expenses--value {
+        font-size: 10px;
+    }
+}
 /**********************************************
 *** BOTTOM PART
 **********************************************/
@@ -177,7 +210,7 @@ body {
 
 /***** LISTS *****/
 .container {
-    width: 1000px;
+    width: 90%;
     margin: 60px auto;
 }
 
@@ -197,6 +230,7 @@ h2 {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 15px;
+    padding-left: 10px;
 }
 
 .icome__title { color: #28B9B5; }
@@ -276,3 +310,56 @@ h2 {
 .unpaid .item__percentage { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
 .unpaid:hover .item__description { font-weight: 900; }
 
+/* RESPONSIVE */
+@media only screen and (max-width: 1000px) { 
+    .container{
+        width: 95%;
+    }
+    .income {
+        width: 45%;
+    }
+    .expenses {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 700px) { 
+    .add__type {
+        width: 20%;
+    }
+    .add__description {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .add__value {
+        width: 83%;
+        margin-bottom: 10px;
+    }
+    .income {
+        float: none;
+        width: 100%;
+        margin-right: none;
+        margin-bottom: 30px;
+    }
+    .expenses {
+        float: none;
+        width: 100%;
+        margin-right: none;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .add__type {
+        width: 97%;
+        padding-left: 2%;
+        margin-bottom: 10px;
+    }
+    .add__description {
+        width: 97%;
+        padding-left: 2%;
+        margin-bottom: 10px;
+    }
+    .add__value {
+        width: 97%;
+        padding-left: 2%;
+        margin-bottom: 10px;
+    }
+}
